@@ -1,0 +1,1 @@
+kubectl proxy --address 0.0.0.0 -p ${1:-8001}  --accept-hosts '.*'
