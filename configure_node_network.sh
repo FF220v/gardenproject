@@ -1,6 +1,6 @@
 NODE_NUMBER=$1
 
-if [ -n NODE_NUMBER ]
+if [ -z $NODE_NUMBER ]
 then
     echo "[configure_node_network.sh] No node number passed"
     exit 0
@@ -19,7 +19,7 @@ auto eth0 \n \
 
 DNS_CONFIG="nameserver 10.0.0.1" 
 
-echo DNS_CONFIG > /etc/resolv.conf 
-echo IFACE_CONFIG > /etc/network/interfaces 
+echo $DNS_CONFIG > /etc/resolv.conf 
+echo $IFACE_CONFIG > /etc/network/interfaces 
 hostnamectl set-hostname node${NODE_NUMBER}
 
