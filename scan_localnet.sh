@@ -1,1 +1,1 @@
-sudo arp-scan --interface=enxb827eb3274d3 --localnet
+arp-scan --interface=enxb827eb3274d3 --localnet
