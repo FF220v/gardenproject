@@ -1,4 +1,5 @@
 NODE_NUMBER=$1
+NODE_IP=$2
 
 if [ -n NODE_NUMBER ]
 then
@@ -6,6 +7,6 @@ then
     exit 0
 fi
 
-git clone https://github.com/FF220v/gardenproject.git gardenproject
-cd gardenproject
-./configure_node_network.sh
+scp configure_node_network.sh root@${NODE_IP}:/configure_node_network.sh
+
+ssh root@${NODE_IP} ./configure_node_network.sh $NODE_NUMBER
