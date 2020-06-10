@@ -9,7 +9,7 @@ spec:
   replicas: 1
   selector:
      matchLabels:
-       service: carts-db
+       name: carts-db
   template:
     metadata:
       labels:
@@ -66,7 +66,7 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      service: carts
+      name: carts
   template:
     metadata:
       labels:
@@ -127,7 +127,7 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      service: catalogue-db
+      name: catalogue-db
   template:
     metadata:
       labels:
@@ -173,7 +173,7 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      service: catalogue
+      name: catalogue
   template:
     metadata:
       labels:
@@ -220,7 +220,7 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      service: front-end
+      name: front-end
   template:
     metadata:
       labels:
@@ -272,7 +272,7 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      service: orders-db
+      name: orders-db
   template:
     metadata:
       labels:
@@ -329,7 +329,7 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      service: orders
+      name: orders
   template:
     metadata:
       labels:
@@ -390,7 +390,7 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      service: payment
+      name: payment
   template:
     metadata:
       labels:
@@ -439,7 +439,7 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      service: queue-master
+      name: queue-master
   template:
     metadata:
       labels:
@@ -481,7 +481,7 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      service: rabbitmq
+      name: rabbitmq
   template:
     metadata:
       labels:
@@ -531,7 +531,7 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      service: shipping
+      name: shipping
   template:
     metadata:
       labels:
@@ -592,7 +592,7 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      service: user-db
+      name: user-db
   template:
     metadata:
       labels:
@@ -649,7 +649,7 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      service: user
+      name: user
   template:
     metadata:
       labels:
