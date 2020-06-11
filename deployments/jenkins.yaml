@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
         - name: jenkins
-          image: laglinaro/jenkinsdocker:master
+          image: jenkins4eval/jenkins:2.231-alpine-arm64
           env:
             - name: JAVA_OPTS
               value: -Djenkins.install.runSetupWizard=false
